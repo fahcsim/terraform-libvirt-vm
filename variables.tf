@@ -115,30 +115,30 @@ variable "dhcp" {
   default     = false
 }
 
-variable "bridge" {
-  description = "Bridge interface"
-  default     = "virbr0"
+variable "macvlan" {
+  description = "macvlan0 interface"
+  default     = "eno1"
 }
 
 variable "ip_address" {
   description = "List of IP addresses"
   type        = list(string)
-  default     = ["192.168.123.101"]
+  default     = ["10.0.0.200"]
 }
 
 variable "ip_nameserver" {
   description = "IP addresses of a nameserver"
-  default     = "192.168.123.1"
+  default     = "10.0.0.1"
 }
 
 variable "ip_gateway" {
   description = "IP addresses of a gateway"
-  default     = "192.168.123.1"
+  default     = "10.0.0.1"
 }
 
 variable "ssh_admin" {
   description = "Admin user with ssh access"
-  default     = "ssh-admin"
+  default     = "ansible"
 }
 
 variable "ssh_keys" {
@@ -159,7 +159,7 @@ variable "local_admin_passwd" {
 
 variable "time_zone" {
   description = "Time Zone"
-  default     = "UTC"
+  default     = "PST"
 }
 
 variable "ssh_private_key" {
