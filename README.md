@@ -1,10 +1,10 @@
 # Libvirt VM Terraform module
 
-[![GitHub Actions](https://github.com/MonolithProjects/terraform-libvirt-vm/workflows/Lint/badge.svg)](https://github.com/MonolithProjects/terraform-libvirt-vm/actions)
+Fork of Terraform module for KVM/Libvirt Virtual Machine. The only real differences is that this version supports using macvtap interfaces as opposed to bridge intterfaces.
+
 [![License](https://img.shields.io/github/license/MonolithProjects/terraform-libvirt-vm)](https://github.com/MonolithProjects/terraform-libvirt-vm/blob/master/LICENSE)
 [![Terraform](https://badgen.net/badge/Terraform%20Registry/yes/blue?icon=terraform)](https://registry.terraform.io/modules/MonolithProjects/vm/libvirt/latest)
 
-Terraform module for KVM/Libvirt Virtual Machine. This module will create a KVM Virtual Machine(s), configure it using Cloud Init and test the ssh connection. This module is using [dmacvicar/libvirt](https://github.com/dmacvicar/terraform-provider-libvirt) Terraform provider.
 
 ## What this module provides
 
