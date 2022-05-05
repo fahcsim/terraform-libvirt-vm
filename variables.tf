@@ -46,7 +46,7 @@ variable "hostname" {
 }
 
 
-variable "hostname" {
+variable "hostnames" {
   description = "VM hostname or FQDN"
   type        = list(string)
   default     = ["vm-01"]
