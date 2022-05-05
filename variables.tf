@@ -45,6 +45,13 @@ variable "hostname" {
   default     = "server"
 }
 
+
+variable "hostname" {
+  description = "VM hostname or FQDN"
+  type        = list(string)
+  default     = ["vm-01"]
+}
+
 variable "memory" {
   description = "RAM in MB"
   type        = string
