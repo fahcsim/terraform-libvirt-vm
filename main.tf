@@ -25,7 +25,8 @@ resource "libvirt_domain" "virt-machine" {
   network_interface {
     macvlan         = var.macvlan
     wait_for_lease = true
-    hostname       = format("${var.vm_hostname_prefix}%02d", count.index + var.index_start)
+    count          = var.vm_count
+    hostname       = var.hostnames[count.index]
   }
 
   xml {
